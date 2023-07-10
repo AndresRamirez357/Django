@@ -20,7 +20,7 @@ def contact_view(request):
                     "Confirmación de recepción de correo y pronta respuesta - Residencias Atlántico",
                     message,
                     email,
-                    ["cfb751d4cc4301@inbox.mailtrap.io"],
+                    ["a5e9b5363972aa@inbox.mailtrap.io"],
                     fail_silently=False
                 )
 
