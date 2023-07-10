@@ -63,14 +63,16 @@
               <a href="">contacto@residenciasatlantico.com</a>
               <ul>
                 <li><a title="Ir a Facebook" target="_blank" href="https://www.facebook.com/"><img
-                      src="./assets/media/img/social/facebook_logo_icon.png" alt="Facebook"></a></li>
+                      src="{% static 'assets/media/img/social/facebook_logo_icon.png' %}" alt="Facebook"></a></li>
                 <li><a title="Ir a Twitter" target="_blank" href="https://www.twitter.com/"><img
-                      src="./assets/media/img/social/twitter_logo_icon.png" alt="Twitter"></a></li>
+                      src="{% static 'assets/media/img/social/twitter_logo_icon.png' %}" alt="Twitter"></a></li>
                 <li><a title="Ir a Instagram" target="_blank" href="https://www.instagram.com/"><img
-                      src="./assets/media/img/social/instagram_logo_icon.png" alt="Instagram"></a></li>
+                      src="{% static 'assets/media/img/social/instagram_logo_icon.png' %}" alt="Instagram"></a></li>
                 <li><a title="Ir a Tiktok" target="_blank" href="https://www.tiktok.com/"><img
-                      src="./assets/media/img/social/tiktok_logo_icon.png" alt="Tiktok"></a></li>
+                      src="{% static 'assets/media/img/social/tiktok_logo_icon.png' %}" alt="Tiktok"></a></li>
               </ul>
+              
+              
             </article>
             <form id="formulario" action="{% url 'contact' %}" method="post" enctype="multipart/form-data">
               {% csrf_token %}
@@ -187,18 +189,19 @@
         <div class="columna-conoce-programadores">
           <h3>CONOCE A SUS CREADORES</h3>
           <a href="https://github.com/velkar1">
-            <img src="assets/media/img/creators/karen.enc" alt="GitHub_Karen">
+            <img src="{% static 'assets/media/img/creators/karen.enc' %}" alt="GitHub_Karen">
           </a>
           <a href="https://github.com/Amenais">
-            <img src="assets/media/img/creators/giuliano.enc" alt="GitHub_Giuliano">
+            <img src="{% static 'assets/media/img/creators/giuliano.enc' %}" alt="GitHub_Giuliano">
           </a>
           <a href="https://github.com/Ingrid218">
-            <img src="assets/media/img/creators/ingrid.enc" alt="GitHub_Ingrid">
+            <img src="{% static 'assets/media/img/creators/ingrid.enc' %}" alt="GitHub_Ingrid">
           </a>
           <a href="https://github.com/AndresRamirez357">
-            <img src="assets/media/img/creators/andres.jpeg" alt="GitHub_Andres">
+            <img src="{% static 'assets/media/img/creators/andres.jpeg' %}" alt="GitHub_Andres">
           </a>
         </div>
+        
         <div class="columna-sobre-nosotros">
           <h3>ACERCA DE ESTE SITIO</h3>
           <p>Este sitio fue creado en base al Trabajo Práctico n°1 (Front End) por el grupo n°4 del curso "Codo a Codo
