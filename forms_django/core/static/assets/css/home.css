@@ -1,0 +1,176 @@
+@import url(./global.css);
+@import url(./carousel.css);
+@import url(footer.css);
+
+.apartado {
+  /* border: 1px solid aquamarine; */
+  border-radius: 50px;
+  margin: 20px;
+  width: 22vw;
+  height: inherit;
+  position: inherit;
+  top: 91px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  height: 60vh;
+}
+
+/* .apartado-cabecera {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: white;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.apartado-cabecera h2 {
+  font-size: x-large;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.apartado-cabecera h2, .apartado-cabecera p {
+  margin: auto;
+  align-items: center;
+} */
+
+.maps-title, .testimonios-title {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  /* border: 1px solid red; */
+  font-size: x-large;
+  font-weight: 600;
+  padding-bottom: 8px;
+  align-items: center;
+  background-color: aliceblue;
+  text-align: center;
+  z-index: 3;
+}
+
+.maps-title {
+  border-radius: 20px 20px 0 0;
+}
+
+.maps {
+  width: 100%;
+  height: 50vh;
+  /* border: 1px solid red; */
+  display: flex;
+  z-index: 3;
+}
+
+.maps iframe {
+  margin: 20px auto;
+  width: 90%;
+  height: auto;
+}
+
+.testimonios-title p {
+  /* border: 1px solid red; */
+  font-size: medium;
+  margin: 5px 0;
+}
+
+.testimonios {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  height: 50vh;
+}
+
+/* .apartado div {
+  background-color: aliceblue;
+  width: 22vw;
+  height: 85vh;
+  position: sticky;
+  top: 12.8vh;
+  left: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+} */
+
+main .contenido {
+  height: fit-content;
+  background-color: transparent;
+}
+
+.contenido {
+  /* border: 1px solid blueviolet; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); */
+}
+
+.contenido {
+  margin: auto;
+}
+
+.contenido .seccion {
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  /* border: 1px solid deeppink; */
+  background-color: aliceblue;
+  /* grid-column: span 1;
+    grid-row: span 1; */
+  /* grid-column: 1;
+    grid-row: 1; */
+  width: 95%;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* .inicio, .nosotros, .servicios, .contacto {
+    grid-column: span 3;
+    grid-row: span 1;
+  } */
+
+.seccion,
+.seccion h2,
+.seccion p {
+  padding: 1%;
+  margin: 0;
+}
+
+.seccion h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.seccion p {
+  font-weight: 300;
+}
+
+.lista-servicios {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.lista-servicios img {
+  height: 10vh;
+  margin: 10px;
+}
+
+.contacto form {
+  margin: 10px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.whatsapp-icon img {
+  height: 64px;
+}

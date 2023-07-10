@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residencias Atlántico</title>
+  <script src="{% static 'assets/js/dark-mode.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'assets/css/about-us.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/BreakPoints.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/drop-down-menu.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/dark-mode-css' %}">
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+  </head>
+  
+
+<body>
+  <div class="grid-container">
+    <header>
+      <div class="contenedor-logo">
+        <a href="{% url 'home' %}">
+          <img src="./assets/media/img/logo.jpg" alt="Residencias Atlantico">
+          <h1>Residencias Atlántico</h1>
+        </a>
+      </div>
+      <nav class="navegador-inicio">
+        <ul class="nav-list">
+          <li><a href="{% url 'home' %}">Inicio</a></li>
+          <li><a href="{% url 'about_us' %}">Sobre Nosotros</a></li>
+          <li><a href="{% url 'servicios' %}">Servicios</a></li>
+          <li><a href="{% url 'contact' %}">Contacto</a></li>
+        </ul>
+        
+      </nav>
+      <button class="abrir-menu"><a href="javascript:void(0);" onclick="responsiveMenu()">&#9776;</a></button>
+    </header>
+    <main>
+      <div class="contenido">
+        <div id="inicio">
+          <section class="seccion inicio">
+            <h2 class="Tittle">¡Estudia, crece y disfruta en Residencias Atlántico!</h2>
+            <p>
+              ¡Bienvenidos a las Residencias Atlántico! Ubicada en una de las zonas más
+              bellas de la costa atlántica, nuestra residencia es el lugar perfecto para futuros profecionales que
+              buscan
+              comodidad y experiencias inolvidables.
+            </p>
+          </section>
+        </div>
+        <div id="nosotros">
+          <section class="seccion nosotros">
+            <h2 class="Tittle">Sobre Nosotros</h2>
+            <div class="descrip">
+              <img
+                src="https://media.discordapp.net/attachments/421794125919158272/1100955080611602442/IMG-20230426-WA0002.jpg?width=571&height=572"
+                alt="">
+              <p>Las Residencias Atlántico es el lugar perfecto para estudiantes que buscan un ambiente tranquilo y
+                cómodo para estudiar, relajarse y disfrutar de la vida en la costa atlántica.</p>
+
+              <p>Nuestras habitaciones y apartamentos están diseñados para adaptarse a las necesidades de los
+                estudiantes, con Wi-Fi gratis, escritorios y una cocina completamente equipada. Además, nuestras
+                instalaciones incluyen una sala de estudio y una biblioteca, perfectas para aquellos que necesitan un
+                lugar tranquilo para trabajar o estudiar.</p>
+
+              <p>Nuestra ubicación es ideal para estudiantes que buscan un lugar tranquilo para estudiar mientras
+                disfrutan de la belleza natural de la costa atlántica. Nuestra residencia se encuentra cerca de una
+                variedad de playas, parques y senderos naturales, ideales para aquellos que buscan explorar la
+                naturaleza y relajarse después de un día de estudio. Además, estamos cerca de varias universidades y
+                escuelas de idiomas, por lo que puede estar seguro de que encontrará un ambiente académico y cultural
+                animado y estimulante.</p>
+
+              <p>En Residencias Atlántico, también nos enorgullece brindarle una amplia gama de servicios y comodidades
+                para garantizar que disfrute de una estadía cómoda y agradable. Nuestra piscina al aire libre es
+                perfecta para relajarse y refrescarse después de un día de estudio, mientras que nuestro gimnasio
+                completamente equipado es perfecto para mantenerse en forma. Además, nuestro personal está disponible
+                las 24 horas del día para ayudarlo con cualquier cosa que necesite, desde información sobre la zona
+                hasta consejos de estudio.</p>
+
+              <p>En Residencias Atlántico, nuestro objetivo es brindarle una experiencia única y gratificante para
+                estudiantes. Ya sea que esté buscando un lugar tranquilo para estudiar, un ambiente relajante para
+                relajarse después de un día de clases, o simplemente una oportunidad para explorar la belleza natural de
+                la costa atlántica, estamos seguros de que encontrará todo lo que necesita aquí. ¡Esperamos darle la
+                bienvenida pronto a las Residencias Atlántico!</p>
+
+            </div>
+            </p>
+          </section>
+          <section class="seccion contacto">
+            <h2 class="Tittle">Video presentación</h2>
+            <div class="video-container autoplay">
+              <video controls>
+                <source src="{% static 'assets/media/video/Presentación Residenciasv2.mp4' %}" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+          <div class="seccion servicios">
+            <h2 class="Tittle">Nuestro equipo</h2>
+            <div class="lista-servicios">
+              <div class="item-servicio">
+                <div class="avatar">
+                  <img src="https://cdn-icons-png.flaticon.com/512/7556/7556303.png" alt="">
+                  <h3>Cutuli Giuliano</h3>
+                </div>
+                <div class="descripcion">
+                  <p>Es un hombre amable y atento que trabaja como recepcionista en las Residencias Atlántico. Siempre
+                    te recibirá con una sonrisa y estará dispuesto a ayudarte con cualquier consulta o necesidad que
+                    tengas durante tu estancia.</p>
+                </div>
+              </div>
+              <div class="item-servicio">
+                <div class="avatar">
+                  <img src="https://cdn-icons-png.flaticon.com/128/5298/5298904.png" alt="">
+                  <h3>Karen V.</h3>
+                </div>
+                <div class="descripcion">
+                  <p>Es una mujer apasionada por los libros y el conocimiento. Como encargada de la biblioteca en las
+                    Residencias Atlántico, ella se asegura de que haya una amplia selección de libros y recursos
+                    académicos disponibles para los estudiantes. </p>
+                </div>
+              </div>
+              <div class="item-servicio">
+                <div class="avatar">
+                  <img src="https://cdn-icons-png.flaticon.com/128/5298/5298904.png" alt="">
+                  <h3>Evans Ingrid</h3>
+                </div>
+                <div class="descripcion">
+                  <p>Es una mujer enérgica y entusiasta que se encarga de coordinar las actividades y eventos para los
+                    estudiantes en las Residencias Atlántico. Organiza desde excursiones a las playas cercanas hasta
+                    talleres culturales y deportivos. </p>
+                </div>
+              </div>
+              <div class="item-servicio">
+                <div class="avatar">
+                  <img src="https://cdn-icons-png.flaticon.com/512/7556/7556303.png" alt="">
+                  <h3>Ramirez Andrés</h3>
+                </div>
+                <div class="descripcion">
+                  <p>Es un hombre dedicado y con habilidades técnicas que trabaja como supervisor de mantenimiento en
+                    las Residencias Atlántico. Él se asegura de que todas las instalaciones estén en buen estado y
+                    funcionando correctamente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+  <div id="contacto">
+  </div>
+  <button class="whatsapp-icon" onclick="toggleDarkMode()">Modo Oscuro</button>
+  </div> -->
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="columna-redes">
+          <h3>PUEDES ENCONTRARNOS EN</h3>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="columna-conoce-programadores">
+          <h3>CONOCE A SUS CREADORES</h3>
+          <a href="https://github.com/velkar1">
+            <img src="{% static 'assets/media/img/creators/karen.enc' %}" alt="GitHub_Karen">
+          </a>
+          <a href="https://github.com/Amenais">
+            <img src="{% static 'assets/media/img/creators/giuliano.enc' %}" alt="GitHub_Giuliano">
+          </a>
+          <a href="https://github.com/Ingrid218">
+            <img src="{% static 'assets/media/img/creators/ingrid.enc' %}" alt="GitHub_Ingrid">
+          </a>
+          <a href="https://github.com/AndresRamirez357">
+            <img src="{% static 'assets/media/img/creators/andres.jpeg' %}" alt="GitHub_Andres">
+          </a>
+        </div>        
+        <div class="columna-sobre-nosotros">
+          <h3>ACERCA DE ESTE SITIO</h3>
+          <p>Este sitio fue creado en base al Trabajo Práctico n°1 (Front End) por el grupo n°4 del curso "Codo a Codo 4.0 - Full Stack
+            Python"</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="copy">Copyright @ 2023 - Todos los derechos reservados</span>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="{% static 'assets/js/drop-down-menu.js' %}"></script>
+<script src="{% static 'assets/js/dark-mode.js' %}"></script>
+
+</html>

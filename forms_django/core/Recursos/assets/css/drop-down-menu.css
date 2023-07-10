@@ -1,0 +1,21 @@
+.navegador-inicio.responsive ul {
+  background: linear-gradient(60deg, #2d5eb8, #08bdbd);
+  background-blend-mode: lighten;
+  border-radius: 0 0 5px 5px;
+}
+
+.navegador-inicio.responsive ul li {
+  margin-top: 20px;
+}
+
+.abrir-menu {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+.abrir-menu a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}

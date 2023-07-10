@@ -1,0 +1,188 @@
+@import url(./home.css);
+@import url(./input-anim.css);
+@import url(./BreakPoints.css);
+/* Contenido de la página */
+
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+
+.apartado {
+  width: 22.2vw;
+  /* background-color: red; */
+}
+
+.contenido {
+  margin: 20px auto;
+  width: 50%;
+  display: flex;
+  width: 50%;
+  /* background-color: green; */
+}
+
+/* Apartado */
+
+.wrapper {
+  height: 100%;
+}
+
+.testimonios-title {
+  border-radius: 20px 20px 0 0;
+}
+
+/* Formulario */
+
+.contacto {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  /* margin-bottom: 20px;
+    max-width: 800px; */
+  /* border: 1px solid blueviolet; */
+}
+
+.info {
+  /* border: 1px solid blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+
+.info h2 {
+  margin: 5% 0;
+}
+
+.info p {
+  margin-top: 2%;
+}
+
+.info > a {
+  margin: 10% 2%;
+  text-decoration: none;
+  color: #2d5eb8;
+}
+
+.info ul {
+  display: flex;
+  width: 50%;
+}
+
+.info ul li {
+  margin: 0 10px;
+}
+
+.info ul li:hover,
+.info ul li:focus {
+  opacity: calc(0.7);
+  transition: 150ms;
+}
+
+.info ul li:not(:hover),
+.info ul li:not(:focus) {
+  transition: 150ms;
+}
+
+form {
+  width: 50%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+
+.campos-datos {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  /* margin: 1%;
+    padding-left: 1.35%; */
+}
+
+legend {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+label {
+  padding: 5px 0;
+  grid-column: span 1;
+  grid-row: span 4;
+}
+
+label span {
+  color: red;
+  font-size: 1em;
+  margin: 2px;
+}
+
+/* input {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid #2d5eb8;
+}
+
+input:active {
+    border: transparent;
+    transform: border;
+}
+
+textarea {
+    margin-top: 2%;
+    width: 100%;
+    height: fit-content;
+    resize: none;
+} */
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.btn-enviar,
+.btn-limpiar {
+  font-weight: 600;
+  font-size: medium;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  width: 45%;
+  display: inline-block;
+}
+
+.btn-enviar:hover,
+.btn-limpiar:hover,
+.btn-enviar:focus,
+.btn-limpiar:focus {
+  opacity: calc(0.8);
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.btn-enviar:not(:hover),
+.btn-limpiar:not(:hover),
+.btn-enviar:not(:focus),
+.btn-limpiar:not(:focus) {
+  transition: 200ms;
+}
+
+.btn-enviar {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn-limpiar {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+footer {
+  grid-area: auto, auto;
+}
+.abrir-menu {
+  display: none;
+}

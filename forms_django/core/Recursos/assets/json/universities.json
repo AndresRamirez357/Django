@@ -1,0 +1,42 @@
+{
+    "university1":{
+        "name": "Aalto University School of Business",
+        "country": "Helsinki, Finlandia"
+    },
+    "university2":{
+        "name": "American University",
+        "country": "Washington, DC, EE.UU."
+    },
+    "university3":{
+        "name": "Ben Gurion University of the Negev",
+        "country": "Ber-Sheva, Israel"
+    },
+    "university4":{
+        "name": "Berlin School of Economics and Law",
+        "country": "Berlín, Alemania"
+    },
+    "university5":{
+        "name": "Boston College",
+        "country": "Boston, MA, EE.UU."
+    },
+    "university6":{
+        "name": "Bucerius Law School",
+        "country": "Hamburgo, Alemania"
+    },
+    "university7":{
+        "name": "California College of the Arts",
+        "country": "San Francisco, CA, EE.UU."
+    },
+    "university8":{
+        "name": "Center for Transnational Legal Studies, Georgetown University",
+        "country": "Londres, Reino Unido"
+    },
+    "university9":{
+        "name": "Centro de Investigación y Docencia Económicas",
+        "country": "Ciudad de México, México"
+    },
+    "university10":{
+        "name": "CENTRUM Business School, Pontificia Universidad Católica de Perú",
+        "country": "Lima, Perú"
+    }
+}

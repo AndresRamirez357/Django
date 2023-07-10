@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+footer {
+  background: #0a141d;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 1;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 10px; /* Espacio entre las columnas */
+  align-items: flex-start;
+  justify-content: center;
+  /*flex-direction: column;*/
+  text-align: center;
+}
+
+.columna-redes {
+  padding-left: 200px;
+  grid-column: 1/2;
+}
+
+.columna-conoce-programadores {
+  padding-right: 200px;
+  grid-column: 3/4;
+}
+
+.columna-conoce-programadores a {
+  text-decoration: none;
+  color: #cacdd2;
+}
+
+.columna-sobre-nosotros {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content h3 {
+  font-size: 1 rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #0a141d;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+footer img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

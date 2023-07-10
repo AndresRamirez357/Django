@@ -1,0 +1,122 @@
+@import url(./home.css);
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;600;800&display=swap");
+
+.all-serv-container {
+  /*display: grid;*/
+  display: flex;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  gap: 20px;
+  background-color: aliceblue;
+  width: 95%;
+  margin: 40px;
+  border-radius: 20px;
+  grid-column: span 3;
+  grid-row: span 1;
+  font-weight: 300;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.slider-container {
+  flex-basis: 50%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+  /* width: 50%;
+  grid-column: 2 / 1;
+  grid-row: 1 / 2;*/
+}
+
+.services-list-container {
+  flex-basis: 50%;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  margin-bottom: 20px;
+  /*width: 50%;
+  grid-column: 1 / 2;
+  grid-row: 1/-1;*/
+}
+
+.services-list-container p {
+  margin: 10px 0;
+}
+
+.services-list-container li {
+  margin: 1em 2em;
+}
+
+.icon-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.icon-list li .icon img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.slider {
+  width: 512px;
+  height: 512px;
+  margin: 50px 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+}
+
+.slider-inner {
+  width: 5000px; /* combined width of all the images */
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: slide 50s infinite;
+}
+
+.slider-inner img {
+  width: 512px;
+  height: 512px;
+  float: left;
+}
+
+@keyframes slide {
+  /* 0% {
+    left: 0;
+  }*/
+  20% {
+    left: -512px;
+  }
+  25% {
+    left: -1024px;
+  }
+  45% {
+    left: -1536px;
+  }
+  50% {
+    left: -2048px;
+  }
+  70% {
+    left: -2560px;
+  }
+  75% {
+    left: -3072px;
+  }
+  95% {
+    left: -3584px;
+  }
+  100% {
+    left: -0px;
+  }
+}
